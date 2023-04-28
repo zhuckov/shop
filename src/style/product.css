@@ -1,43 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-.products__item{ 
-    font-family: 'Roboto', sans-serif;
+.product{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
     font-weight: 400;
-    width: 25%;
-    border: 2px solid rgba(0,0,0,.125);
+    padding: 15px;
+    width: 23%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    border-radius: 8px;
 }
 .products__item__img{
     width: 100%;
+    opacity: 0.95;
 }
-
-.products__item__button{ 
-    background-color: black;
-    color: white;
-    width: 70%;
-    padding: 6px;
-    font-size:  20px;
+.product__title{
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
 }
-.products__item__info-block{
+.product_panel{
     display: flex;
-    justify-self: center;
+    justify-content: space-between;
+}
+.product__info{
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px 15px;
-    border-top: 2px solid rgba(0,0,0,.125);
-    background-color: rgba(0,0,0,.090);
 }
-.products__item__title , .products__item__group-name , .products__item__price , .products__item__button{ 
-    margin-top: 10px
+.product__group{
+    font-size: 16px;
 }
-.products__item__price, .products__item__title{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-}
-.products__item__group-name{
-    color:#625e5e92;
-}
-.products__item__button:hover{ 
+.product__price{
+    font-size: 18px;
     color: black;
-    border: 1px dashed black;
-    background-color: white;
+    margin: 6px 0px 12px 0px;
 }
